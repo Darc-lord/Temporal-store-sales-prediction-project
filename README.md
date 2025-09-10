@@ -27,12 +27,12 @@ The steps taking in creating the model:
 1. **Clone The Repository**
 	```bash
 	git clone https://github.com/Darc-lord/Temporal-store-sales-prediction-project.git
-	cd Insurance-Premium-Amount
+	cd Temporal-store-sales-prediction
 	```
 
 2. **Download Dataset**
 	```bash
-	 [https://www.kaggle.com/competitions/playground-series-s4e12/data](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data)
+	 https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data
 	```	
 
 ## Acknoledgements
