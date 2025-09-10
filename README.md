@@ -12,8 +12,26 @@ The project was done for submission in the Kaggle **Store Sales - Time Series Fo
 The steps taking in creating the model:
 
 - **Exploratory Data Analysis**: Which involves going through the data, it's columns and it's rows checking for missing data, correlation, relationships and patterns, trends, seasonality and cycles.
+
+**Trend**
+A trend is visualized by taking an average over a period longer than any seasonla period in the series. This is achieved by using moving average in Pandas.
+
+![Model Accuracies](PICTURES/trend.png)
+
+
+**Seasonal Plot**
+The seasonal plot shows segments of the time seires ploted against some common period, the season that is to be observed.
+
+![Confusion Matrix](PICTURES/seasonal_plot.png)
+
+**Periodogram**
+Periodogram tells the strength of the frequencies in a time series.
+
+![Confusion Matrix](PICTURES/periodgram_plt.png)
+
+  
 - **Filling Missing Data**: This is a crucial part of the model creation purpose, Models cannot thoroughly learn from Nan values. The method of filling is crucial, as you could distort the temporal nature of the data if not filled properly.
-- **Feature Engineering**: This is a very important aspect of time series forecasting as you have to engineer time series features that your model can understand. `Scikit-Learn` has a method to achieve this using DeterministicProcess and CalenderFourier, to create trend, seasonal and cyclic features. Engineering holiday features and other features also add to your models databank.
+- **Feature Engineering**: This is a very important aspect of time series forecasting as you have to engineer time series features that your model can understand. `Scikit-Learn` has a method to achieve this using DeterministicProcess and CalenderFourier, to create trend, seasonal and cyclic features. Engineering holiday features, lag features and other features also add to your models databank.
 - **Converting categorical data into Numerical form and encoding them**: As the intro says,this section involves converting all categorical and all object dtypes into Numerical dtypes. This is crucial as Machine learning Models only learn from Numerical data.
 - **Modelling**: This section involving applying machine learning models to our already clean datase. In this project LogisticRegression, Xgboost Regressor and Ensemble's Random Forest Regressor were both evaluated and tuned to find which found more pattern and learned better on the data. A hybrid model was also created using LogisticRegression and Xgboost as both models would learn different parts of the data and their predictions combined to form the submitted prediction
   
