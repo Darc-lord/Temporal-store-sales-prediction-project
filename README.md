@@ -14,20 +14,23 @@ The steps taking in creating the model:
 - **Exploratory Data Analysis**: Which involves going through the data, it's columns and it's rows checking for missing data, correlation, relationships and patterns, trends, seasonality and cycles.
 
 **Trend**
+
 A trend is visualized by taking an average over a period longer than any seasonla period in the series. This is achieved by using moving average in Pandas.
 
-![Model Accuracies](PICTURES/trend.png)
+![Trend](PICTURES/trend.png)
 
 
 **Seasonal Plot**
+
 The seasonal plot shows segments of the time seires ploted against some common period, the season that is to be observed.
 
-![Confusion Matrix](PICTURES/seasonal_plot.png)
+![Seasonal Plots](PICTURES/seasonal_plot.png)
 
 **Periodogram**
+
 Periodogram tells the strength of the frequencies in a time series.
 
-![Confusion Matrix](PICTURES/periodgram_plt.png)
+![Periodogram Plot](PICTURES/periodogram_plt.png)
 
   
 - **Filling Missing Data**: This is a crucial part of the model creation purpose, Models cannot thoroughly learn from Nan values. The method of filling is crucial, as you could distort the temporal nature of the data if not filled properly.
